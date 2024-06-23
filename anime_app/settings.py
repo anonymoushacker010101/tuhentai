@@ -19,7 +19,7 @@ DEBUG = os.environ.get('RENDER') != 'true'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://tuhentai.onrender.com']
 
 
 # Application definition
