@@ -8,8 +8,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u1k#-cvf0kn%7_3ay*c80_ow^1ev&*1om=ke*jaz+ebb@v1$vr'
 
+import os
+
+# Obtener la clave secreta del entorno o usar una clave por defecto
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your_secret_key_here')
+
+# Configuración para activar o desactivar la depuración según el entorno
+DEBUG = os.environ.get('RENDER') != 'true'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
