@@ -21,7 +21,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','http://localhost:5173/']
 CORS_ALLOW_ALL_ORIGINS = True
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
